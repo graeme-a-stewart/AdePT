@@ -15,5 +15,6 @@
 #include <CopCore/VariableSizeObjAllocator.h>
 #include <CopCore/launch_grid.h>
 #include <CopCore/Launcher.h>
+#include <CopCore/backend/BackendCommon.h>
 
 #endif // COPCORE_COPCORE_H_
