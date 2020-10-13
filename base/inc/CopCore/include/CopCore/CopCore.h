@@ -9,4 +9,6 @@
 #ifndef COPCORE_COPCORE_H_
 #define COPCORE_COPCORE_H_
 
+#include "backend/BackendCommon.h"
+
 #endif // COPCORE_COPCORE_H_
