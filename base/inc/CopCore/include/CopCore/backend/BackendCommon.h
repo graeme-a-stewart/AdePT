@@ -1,8 +1,8 @@
-/*****************************************************************************\
-* (c) Copyright 2018-2020 CERN for the benefit of the LHCb Collaboration      *
-\*****************************************************************************/
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
 
-#pragma once
+#ifndef COPCORE_BACKEND_BACKENDCOMMON
+#define COPCORE_BACKEND_BACKENDCOMMON
 
 #include <tuple>
 #include <string>
@@ -125,3 +125,5 @@ struct ForwardType<const T, U> {
 };
 
 std::tuple<bool, int> get_device_id(std::string pci_bus_id);
+
+#endif // COPCORE_BACKEND_BACKENDCOMMON

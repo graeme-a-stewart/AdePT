@@ -1,6 +1,6 @@
-/*****************************************************************************\
-* (c) Copyright 2018-2020 CERN for the benefit of the LHCb Collaboration      *
-\*****************************************************************************/
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
+
 #pragma once
 
 #include "backend/BackendCommon.h"

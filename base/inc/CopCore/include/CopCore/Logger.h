@@ -1,7 +1,8 @@
-/*****************************************************************************\
-* (c) Copyright 2018-2020 CERN for the benefit of the LHCb Collaboration      *
-\*****************************************************************************/
-#pragma once
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
+
+#ifndef COPCORE_LOGGER
+#define COPCORE_LOGGER
 
 #define verbose_cout logger::logger(logger::verbose)
 #define debug_cout logger::logger(logger::debug)
@@ -27,3 +28,5 @@ int verbosity();
 
 void setVerbosity(int level);
 } // namespace logger
+
+#endif  // COPCORE_LOGGER
