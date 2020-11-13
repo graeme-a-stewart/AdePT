@@ -1,8 +1,8 @@
-/*****************************************************************************\
-* (c) Copyright 2018-2020 CERN for the benefit of the LHCb Collaboration      *
-\*****************************************************************************/
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
 
-#pragma once
+#ifndef COPCORE_BACKEND_CUDABACKEND
+#define COPCORE_BACKEND_CUDABACKEND
 
 #if defined(TARGET_DEVICE_CUDA) || defined(TARGET_DEVICE_CUDACLANG)
 
@@ -47,3 +47,5 @@ inline const char *cudaGetErrorString(cudaError_t error)
   }
 
 #endif
+
+#endif // COPCORE_BACKEND_CUDABACKEND

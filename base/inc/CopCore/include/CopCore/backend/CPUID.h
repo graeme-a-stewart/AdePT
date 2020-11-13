@@ -1,8 +1,8 @@
-/*****************************************************************************\
-* (c) Copyright 2018-2020 CERN for the benefit of the LHCb Collaboration      *
-\*****************************************************************************/
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
 
-#pragma once
+#ifndef COPCORE_BACKEND_CPUID
+#define COPCORE_BACKEND_CPUID
 
 #include <array>
 #include <cstdint>
@@ -36,3 +36,5 @@ public:
 
 bool supports_feature(const unsigned bit, const CpuIDRegister reg_index = CpuIDRegister::ecx);
 } // namespace cpu_id
+
+#endif  // COPCORE_BACKEND_CPUID

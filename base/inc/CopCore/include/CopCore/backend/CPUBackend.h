@@ -1,8 +1,8 @@
-/*****************************************************************************\
-* (c) Copyright 2018-2020 CERN for the benefit of the LHCb Collaboration      *
-\*****************************************************************************/
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
 
-#pragma once
+#ifndef COPCORE_BACKEND_CPUBACKEND
+#define COPCORE_BACKEND_CPUBACKEND
 
 #ifdef TARGET_DEVICE_CPU
 
@@ -236,3 +236,5 @@ using half_t = float;
   }
 
 #endif
+
+#endif // COPCORE_BACKEND_CPUBACKEND

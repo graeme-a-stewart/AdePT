@@ -1,7 +1,8 @@
-/*****************************************************************************\
-* (c) Copyright 2020 CERN for the benefit of the LHCb Collaboration           *
-\*****************************************************************************/
-#pragma once
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
+
+#ifndef COPCORE_BACKEND_VECTOR
+#define COPCORE_BACKEND_VECTOR
 
 #if defined(__clang__)
 #pragma clang diagnostic push
@@ -373,3 +374,5 @@ __device__ inline float signselect(const float &s, const float &a, const float &
 #if defined(ADD_BACK_AVX512F)
 #define __AVX512F__
 #endif
+
+#endif // COPCORE_BACKEND_VECTOR

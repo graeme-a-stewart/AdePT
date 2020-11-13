@@ -1,7 +1,8 @@
-/*****************************************************************************\
-* (c) Copyright 2018-2020 CERN for the benefit of the LHCb Collaboration      *
-\*****************************************************************************/
-#pragma once
+// SPDX-FileCopyrightText: 2020 CERN, for the benefit of the LHCb collaboration
+// SPDX-License-Identifier: Apache-2.0
+
+#ifndef COPCORE_TUPLETOOLS
+#define COPCORE_TUPLETOOLS
 
 #include <tuple>
 #include <functional>
@@ -148,3 +149,5 @@ template <typename T, typename U, typename... Ts>
 struct index_of<T, std::tuple<U, Ts...>> {
   static constexpr std::size_t value{1 + index_of_v<T, std::tuple<Ts...>>};
 };
+
+#endif
